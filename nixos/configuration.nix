@@ -44,7 +44,6 @@
     meslo-lgs-nf
   ];
 
-  # Configure keymap in X11
   services.xserver = {
     layout = "br";
     xkbVariant = "nodeadkeys";
@@ -84,6 +83,7 @@
      gnumake
      cmake
      qt6.qmake
+     alacritty
    ];
 
   system.stateVersion = "22.11";
