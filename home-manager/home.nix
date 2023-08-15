@@ -18,6 +18,7 @@
     material-icons
     nitrogen
     picom
+    firefox
   ];
 
   home.file = {
