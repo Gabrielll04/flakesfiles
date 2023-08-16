@@ -1,11 +1,11 @@
 { config, pkgs, ...}:
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
+      ../modules/i3.nix
       ./hardware-configuration.nix
       ./environment-variables.nix
-      ./i3/i3.nix
-    ];
+  ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
  
