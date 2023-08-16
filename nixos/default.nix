@@ -4,7 +4,6 @@
     [
       ../modules/i3.nix
       ./hardware-configuration.nix
-      ./environment-variables.nix
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
