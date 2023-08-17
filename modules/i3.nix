@@ -8,8 +8,6 @@
     };
     displayManager = {
       defaultSession = "none+i3";
-      lightdm.enable = false;
-      gdm.enable = true;
     };
 
     windowManager.i3 = {
