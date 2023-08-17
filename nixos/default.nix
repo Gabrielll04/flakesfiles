@@ -39,8 +39,9 @@
     nvidia.modesetting.enable = true;
   };
 
-  fonts.fonts = with pkgs; [
+  fonts.packages = with pkgs; [
     meslo-lgs-nf
+    noto-fonts-cjk-sans
   ];
 
   services.xserver = {
@@ -84,6 +85,12 @@
      qt6.qmake
      alacritty
    ];
+
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
 
   system.stateVersion = "22.11";
 
