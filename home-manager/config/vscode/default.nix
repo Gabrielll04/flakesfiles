@@ -2,8 +2,8 @@
 {
   programs.vscode = {
     enable = true;
-    enableUpdateCheck = false;
-    enableExtensionUpdateCheck = false;
+    enableUpdateCheck = true;
+    enableExtensionUpdateCheck = true;
 
     userSettings = { 
         "files.autoSave" = "afterDelay";
