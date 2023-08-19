@@ -41,6 +41,8 @@
 
   fonts.packages = with pkgs; [
     meslo-lgs-nf
+    noto-fonts
+    noto-fonts-extra
     noto-fonts-cjk-sans
   ];
 
