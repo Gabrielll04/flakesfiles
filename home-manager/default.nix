@@ -7,7 +7,7 @@
     ./config/nvim
     ./config/vscode
     ./config/zsh
-    ./i3/
+    ./i3
   ];
 
   home.username = "guimaraes";
