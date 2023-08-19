@@ -8,7 +8,7 @@
     nur.url = "github:nix-community/NUR";
   };
 
-  outputs = {nixpkgs, home-manager, ...}@inputs: {
+  outputs = {nixpkgs, home-manager, nur, ...}@inputs: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
@@ -20,7 +20,10 @@
       "guimaraes@nixos" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = { inherit inputs; };
-        modules = [ ./home-manager ];
+        modules = [
+          nur.nixosModules.nur
+          ./home-manager
+        ];
       };
     };
   };
