@@ -1,5 +1,4 @@
 { config, pkgs, ... }:
-
 {
 
   imports = [
@@ -7,6 +6,7 @@
     ./config/nvim
     ./config/vscode
     ./config/zsh
+    ./config/firefox
     ./i3
   ];
 
@@ -19,7 +19,6 @@
     material-icons
     nitrogen
     picom
-    firefox
   ];
 
   home.file = {
