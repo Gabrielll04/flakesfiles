@@ -54,6 +54,7 @@
     extensions = with pkgs.vscode-extensions; [
         bbenoist.nix
         ms-azuretools.vscode-docker
+        pkief.material-icon-theme
         bradlc.vscode-tailwindcss
       ];
   };
