@@ -1,2 +1,4 @@
 home-manager/config/zsh/p10k-config/.p10k.zsh linguist-vendored
-home-manager/config/nvim/lua linguist-vendored
+home-manager/config/nvim/lua/lsp.lua linguist-vendored
+home-manager/config/nvim/lua/settings.lua linguist-vendored
+home-manager/config/nvim/lua/treesitter.lua linguist-vendored
