@@ -19,6 +19,8 @@
     material-icons
     nitrogen
     picom
+    ripgrep
+    fd
   ];
 
   home.file = {
