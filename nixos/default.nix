@@ -86,6 +86,11 @@
      cmake
      qt6.qmake
      alacritty
+     gcc
+     zip
+     rar
+     unzip
+     clang
    ];
 
   nix.gc = {
