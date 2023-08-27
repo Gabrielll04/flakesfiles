@@ -1,21 +1,12 @@
 { config, pkgs, ...}:
-let
-  minegrub-theme = import ../pkgs/minegrub-theme;
 
-in{
-  imports =
-    [
-      ../modules/i3.nix
+{
+  imports = [
+      ../modules
       ./hardware-configuration.nix
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
- 
-  # Bootloader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/sda";
-  boot.loader.grub.useOSProber = true;
-  boot.loader.grub.theme = minegrub-theme pkgs;
 
   networking.hostName = "nixos";
 
